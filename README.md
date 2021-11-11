@@ -1,6 +1,6 @@
 ## Description
 
-Blog backend built with NestJS and Prisma
+Full stack application built with React, NestJS, and Prisma.
 
 A walkthrough for this project is available at [WALKTHROUGH.md](WALKTHROUGH.md).
 
@@ -41,6 +41,7 @@ $ yarn test:cov
 
 ## Resources used
 
+- [nestjs-blog - Forrest Wilkins | GitHub](https://github.com/forrestwilkins/nestjs-blog)
 - [Next-Generation & Fully Type-Safe ORM for NestJS - Prisma](https://www.prisma.io/nestjs)
 - [NestJS Crash Course - Marius Espejo | YT](https://www.youtube.com/watch?v=2n3xS89TJMI)
 - [NestJS in 100 Seconds - Fireship | YT](https://www.youtube.com/watch?v=0M8AYU_hPas)
