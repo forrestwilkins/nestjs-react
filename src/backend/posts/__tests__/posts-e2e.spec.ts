@@ -1,4 +1,4 @@
-import * as request from "supertest";
+import supertest from "supertest";
 import { Test } from "@nestjs/testing";
 import { PostsModule } from "../posts.module";
 import { PostsService } from "../posts.service";
@@ -43,7 +43,7 @@ describe("Posts", () => {
   });
 
   it(`/GET posts`, () => {
-    return request(app.getHttpServer())
+    return supertest(app.getHttpServer())
       .get("/posts")
       .expect(200)
       .expect(postsService.posts());
