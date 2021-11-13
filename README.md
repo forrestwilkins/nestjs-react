@@ -14,7 +14,7 @@ $ npm install -g yarn
 $ yarn install
 
 # Add .env file with DATABASE_URL and run migrations
-$ npx prisma migrate dev
+$ yarn prisma migrate dev
 
 # Enable pre-commit hook with Husky
 $ npx husky install && npx husky add .husky/pre-commit "yarn lint-staged"
