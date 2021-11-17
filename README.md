@@ -26,10 +26,7 @@ $ yarn husky install && npx husky add .husky/pre-commit "yarn lint-staged"
 
 ```bash
 # Development
-$ yarn start
-
-# Watch mode
-$ yarn start:dev
+$ yarn dev
 
 # Open Prisma Studio to explore and manipulate your data
 $ yarn prisma studio
@@ -55,3 +52,4 @@ $ yarn test:cov
 - [NestJS in 100 Seconds - Fireship | YT](https://www.youtube.com/watch?v=0M8AYU_hPas)
 - [OpenAPI Specification | Swagger](https://swagger.io/specification/)
 - [NestJS docs](https://docs.nestjs.com) & [Prisma docs](https://www.prisma.io/docs)
+- [useQuery | React Query](https://react-query.tanstack.com/reference/useQuery)

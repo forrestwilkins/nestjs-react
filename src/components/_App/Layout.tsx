@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { ReactChild } from "react";
 import { ThemeProvider, Container, CssBaseline } from "@mui/material";
-import muiTheme from "../../styles/theme";
+import { Messages } from "../../utils/messages";
+import theme from "../../styles/theme";
 import HeadContent from "./HeadContent";
 
 const Layout = ({ children }: { children: ReactChild }) => {
@@ -9,10 +10,10 @@ const Layout = ({ children }: { children: ReactChild }) => {
     <>
       <Head>
         <HeadContent />
-        <title>nextjs-nestjs</title>
+        <title>{Messages.brand()}</title>
       </Head>
 
-      <ThemeProvider theme={muiTheme}>
+      <ThemeProvider theme={theme}>
         <CssBaseline />
 
         <Container maxWidth="md" sx={{ marginTop: "50px" }}>
