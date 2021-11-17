@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Card, CardContent, Typography } from "@mui/material";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -9,7 +10,13 @@ const Home = () => {
       .then((res) => setPosts([res]));
   }, []);
 
-  return <>{posts}</>;
+  return (
+    <Card>
+      <CardContent>
+        <Typography>Posts: {posts}</Typography>
+      </CardContent>
+    </Card>
+  );
 };
 
 export default Home;

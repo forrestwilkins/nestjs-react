@@ -28,7 +28,7 @@ export const getApp = async () => {
   return app;
 };
 
-export const getListener = async () => {
+export const getListener = async (): Promise<NextApiHandler<unknown>> => {
   const app = await getApp();
   const server: Server = app.getHttpServer();
   const [listener] = server.listeners("request") as NextApiHandler[];
