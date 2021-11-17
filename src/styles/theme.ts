@@ -1,9 +1,8 @@
 import { createTheme } from "@mui/material/styles";
 
-const defaultTheme = createTheme();
-
-export const BLACK = defaultTheme.palette.grey[900];
-export const WHITE = defaultTheme.palette.grey[100];
+const initialTheme = createTheme();
+export const BLACK = initialTheme.palette.grey[900];
+export const WHITE = initialTheme.palette.grey[100];
 
 const globalTheme = createTheme({
   typography: {
@@ -15,7 +14,7 @@ const globalTheme = createTheme({
   },
 });
 
-const muiTheme = createTheme({
+const theme = createTheme({
   ...globalTheme,
 
   components: {
@@ -27,4 +26,4 @@ const muiTheme = createTheme({
   },
 });
 
-export default muiTheme;
+export default theme;
