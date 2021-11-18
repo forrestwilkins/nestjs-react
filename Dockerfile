@@ -13,8 +13,7 @@ RUN yarn install
 
 COPY . /usr/src/app
 
-RUN yarn prisma migrate dev
-
+RUN until yarn prisma migrate dev; do echo "Retrying..."; sleep 2; done
 RUN yarn build
 
 EXPOSE 3000
