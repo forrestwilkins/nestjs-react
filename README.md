@@ -1,6 +1,6 @@
 ## Description
 
-Full stack application built with React, NestJS, and Prisma.
+Full stack application built with Next.js, NestJS, TypeScript, and Prisma.
 
 A walkthrough for this project is available at [WALKTHROUGH.md](WALKTHROUGH.md).
 

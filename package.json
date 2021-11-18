@@ -1,8 +1,8 @@
 {
-  "name": "nestjs-blog",
+  "name": "nextjs-nestjs",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Full stack application built with Next.js, NestJS, TypeScript, and Prisma.",
+  "author": "Forrest Wilkins",
   "private": true,
   "license": "GPL-3.0",
   "scripts": {
@@ -37,6 +37,7 @@
     "@prisma/client": "^3.4.2",
     "axios": "^0.24.0",
     "next": "12.0.3",
+    "node-sass": "^6.0.1",
     "passport": "^0.5.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
