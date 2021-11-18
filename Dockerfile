@@ -11,8 +11,6 @@ COPY yarn.lock /usr/src/app
 
 RUN yarn install
 
-RUN echo $"DATABASE_URL='postgresql://user:password@db:5432/postgresdb'\nJWT_KEY='aRandomString'" > .env 
-
 COPY . /usr/src/app
 
 RUN yarn prisma migrate dev
