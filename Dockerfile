@@ -14,9 +14,6 @@ RUN yarn install
 
 COPY . /usr/src/app
 
-# TODO: The line below is currently preventing the image from building. Potential solution: https://docs.docker.com/compose/startup-order
-# RUN until yarn prisma migrate dev; do echo "Retrying..."; sleep 2; done
-
 RUN chmod 777 ./wait-for-it.sh
 
 EXPOSE 3000
