@@ -12,6 +12,7 @@ services:
       - /usr/src/app/.next
     env_file:
       - .env
+    command: ["./wait-for-it.sh", "db", "--", "yarn", "prisma generate", "prisma migrate dev"]
     depends_on:
       - db
 
@@ -23,6 +24,6 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_HOST_AUTH_METHOD=trust
     volumes:
-      - ./db/data/postgres:/var/lib/postgresql/data
+      - ./pgdata:/var/lib/postgresql/data
     ports:
       - 5432:5432
