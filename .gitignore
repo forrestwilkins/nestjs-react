@@ -46,6 +46,7 @@ lerna-debug.log*
 .*
 !.gitignore
 !.gitkeep
+!.dockerignore
 !.prettierrc
 !.eslintrc
 !.eslintrc.js
