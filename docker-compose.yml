@@ -12,7 +12,7 @@ services:
       - /usr/src/app/.next
     env_file:
       - .env
-    command: ["./wait-for-it.sh", "db", "--", "yarn", "prisma generate", "prisma migrate dev"]
+    command: ["./wait-for-it.sh", "db:5432", "--", "yarn", "prisma generate", "prisma migrate dev"]
     depends_on:
       - db
 
