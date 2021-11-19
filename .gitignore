@@ -1,6 +1,7 @@
 # compiled output
 /dist
 /node_modules
+/pgdata
 
 # Logs
 logs
@@ -45,6 +46,7 @@ lerna-debug.log*
 .*
 !.gitignore
 !.gitkeep
+!.dockerignore
 !.prettierrc
 !.eslintrc
 !.eslintrc.js
